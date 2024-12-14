@@ -16,7 +16,7 @@ export default function Header() {
     >
       <nav className="container mx-auto px-6 py-3">
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-xl font-bold text-white">Abhirup Banerjee</Link>
+          <Link href="/" className="text-xl font-bold text-white">@Abhirinspace</Link>
           <div className="hidden md:flex space-x-4">
             {['Skills', 'Projects', 'Education', 'Achievements', 'Contact'].map((item) => (
               <Link key={item} href={`#${item.toLowerCase()}`} className="text-gray-300 hover:text-white transition duration-300">

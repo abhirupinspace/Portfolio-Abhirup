@@ -7,9 +7,9 @@ import { motion } from 'framer-motion'
 export default function Hero() {
   return (
     <section className="py-20">
-      <div className="container mx-auto px-6 text-center">
+      <div className="container mx-auto px-1 text-center">
         <motion.h1 
-          className="text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600"
+          className="py-10 text-9xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-green-400"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -17,7 +17,7 @@ export default function Hero() {
           Abhirup Banerjee
         </motion.h1>
         <motion.p 
-          className="text-xl text-gray-300 mb-8"
+          className="text-4xl text-white mb-8"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -40,7 +40,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.6 }}
         >
           <Button asChild variant="outline">
-            <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/abhirupinspace" target="_blank" rel="noopener noreferrer">
               <Github className="mr-2 h-4 w-4" /> GitHub
             </a>
           </Button>
@@ -50,7 +50,7 @@ export default function Hero() {
             </a>
           </Button>
           <Button asChild variant="outline">
-            <a href="https://twitter.com/yourtwitter" target="_blank" rel="noopener noreferrer">
+            <a href="https://twitter.com/AbhirupTweetOn" target="_blank" rel="noopener noreferrer">
               <Twitter className="mr-2 h-4 w-4" /> Twitter
             </a>
           </Button>
@@ -60,9 +60,6 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}
         >
-          <Button asChild>
-            <a href="#contact">Get in Touch</a>
-          </Button>
         </motion.div>
       </div>
     </section>
